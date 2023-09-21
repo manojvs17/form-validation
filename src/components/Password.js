@@ -52,7 +52,7 @@ const Password = () => {
 
     function showHideConfirm(){
         if(confirmPassword){
-            return <p className='warning-font'>Password {confirmPassword && password===confirmPassword ?<span className='good'>Matched</span> : <span className='warning'>not Matched</span>}</p>
+            return <p className='warning-font'>Password :{confirmPassword && password===confirmPassword ?<span className='good'>Matched</span> : <span className='warning'>not Matched</span>}</p>
         }
     }
   return (
