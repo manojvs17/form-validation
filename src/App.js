@@ -1,6 +1,4 @@
-
 import './App.css';
-import Country from './components/SetCountry';
 import Email from './components/Email';
 import Gender from './components/Gender';
 import Header from './components/Header';
