@@ -23,12 +23,12 @@ const Name = () => {
         <div className='flex flex-col font-poppins'>
             <label htmlFor="firstName" className='label'>First Name</label>
             <input type="text" value={firstName} id='firstName' className='input-box focus:outline-none ' required onChange={handleFirstName}/>
-            {!isValidFirstName && <p>Enter only text</p>}
+            {!isValidFirstName && <p className='warning'>Enter only text</p>}
         </div>
         <div className='flex flex-col font-poppins'>
             <label htmlFor="lastName" className='label'>Last Name</label>
             <input type="text" value={lastName} id='lastName' className='input-box focus:outline-none ' required onChange={handleLastName}/>
-            {!isValidLastName && <p>Enter only text</p>}
+            {!isValidLastName && <p className='warning'>Enter only text</p>}
         </div>        
     </div>
   )

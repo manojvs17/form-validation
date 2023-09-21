@@ -46,13 +46,13 @@ const Password = () => {
 
     function showHidePassword(){
         if(isPasswordFocused){
-            return <p>{(password && containNumber && containSpecialChar && containCapital && containSmall && !containSpace)? "Your password is :Strong": "Your password is :Weak"}</p>
+            return <p className='warning-font'>Your Password is :{(password && containNumber && containSpecialChar && containCapital && containSmall && !containSpace)? <span className='good'>Strong</span>: <span className='warning'>Weak</span>}</p>
         }
     }
 
     function showHideConfirm(){
         if(confirmPassword){
-            return <p>Password {confirmPassword && password===confirmPassword ?"Matched" : "not Matched"}</p>
+            return <p className='warning-font'>Password {confirmPassword && password===confirmPassword ?<span className='good'>Matched</span> : <span className='warning'>not Matched</span>}</p>
         }
     }
   return (

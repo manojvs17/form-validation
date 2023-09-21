@@ -43,3 +43,21 @@ font-size: .9em;
 select{
   cursor: pointer;
 }
+
+.warning{
+  text-align: center;
+  font-size: 17px;
+  color: red;
+  font-weight: bold;
+}
+.warning-font{
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+.good{
+  text-align: center;
+  font-size: 17px;
+  color: rgb(14, 177, 14);
+  font-weight: bold;
+}

@@ -27,8 +27,8 @@ const SetCountry = () =>{
     }, [selectedState, selectedCountry]);
 
     return (
-        <div className='flex flex-col gap-5 justify-center items-center h-fit w-[100%] p-2'>
-            <div className='flex gap-2'>
+        <div className='flex flex-col gap-5 justify-center items-center h-fit w-[100%] p-5'>
+            <div className='flex gap-2 font-poppins'>
                 <label htmlFor="country" className='label'>Country:</label>
                 <select
                 value={selectedCountry}
@@ -46,7 +46,7 @@ const SetCountry = () =>{
             </select>
             </div>
            
-            <div className='flex gap-9'>
+            <div className='flex gap-9 font-poppins'>
                 <label htmlFor="state" className='label'>State:</label>
                 <select
                 value={selectedState}
@@ -64,7 +64,7 @@ const SetCountry = () =>{
                 </select>
             </div>
             
-            <div className='flex gap-12'>
+            <div className='flex gap-12 font-poppins'>
                 <label htmlFor="city" className='label'>City:</label>
                 <select 
                 value={selectedCity}

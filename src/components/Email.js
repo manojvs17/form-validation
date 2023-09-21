@@ -15,7 +15,7 @@ const Email = () => {
 
     function showHideNumber(){
         if(isNumberFocused){
-        return <p>{isValidNumber && "Enter 10 Numbers"}</p>
+        return <p className='warning'>{isValidNumber && "Enter 10 Numbers"}</p>
         }
     }
   return (

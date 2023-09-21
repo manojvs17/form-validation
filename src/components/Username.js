@@ -16,7 +16,7 @@ const Username = () => {
         <div className='flex flex-col font-poppins'>
             <label htmlFor="userName" className='label'>Set User Name</label>
             <input type="text" value={userName} name="userName" id="userName" className='input-box focus:outline-none ' required onChange={checkSpace} onFocus={()=>setIsActive(true)} onBlur={()=>setIsActive(false)}/>
-            <p>{isActive && containSpace && "Enter without space"}</p>
+            <p className='warning'>{isActive && containSpace && "Enter without space"}</p>
         </div>
     </div>
   )
