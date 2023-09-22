@@ -18,16 +18,24 @@ const Name = () => {
         const containsInvalidChar = [...event.target.value].some(char => invalidChars.includes(char));
         setIsValidLastName(!containsInvalidChar);
     }
+    
+    const handleFNBoxStyle={
+        boxShadow: (!isValidFirstName) ? 'inset 0px 0px 0px 2px red' : ''
+    }
+    const handleLNBoxStyle={
+        boxShadow: (!isValidLastName) ? 'inset 0px 0px 0px 2px red' : ''
+    }
+    
   return (
     <div className='flex flex-wrap justify-around gap-10 w-100% mx-auto p-2 h-fit'>
         <div className='flex flex-col font-poppins'>
             <label htmlFor="firstName" className='label'>First Name</label>
-            <input type="text" value={firstName} id='firstName' className='input-box focus:outline-none ' required onChange={handleFirstName}/>
+            <input type="text" value={firstName} id='firstName' className='input-box focus:outline-none ' required onChange={handleFirstName} style={handleFNBoxStyle}/>
             {!isValidFirstName && <p className='warning'>Enter only text</p>}
         </div>
         <div className='flex flex-col font-poppins'>
             <label htmlFor="lastName" className='label'>Last Name</label>
-            <input type="text" value={lastName} id='lastName' className='input-box focus:outline-none ' required onChange={handleLastName}/>
+            <input type="text" value={lastName} id='lastName' className='input-box focus:outline-none ' required onChange={handleLastName} style={handleLNBoxStyle}/>
             {!isValidLastName && <p className='warning'>Enter only text</p>}
         </div>        
     </div>
