@@ -65,7 +65,7 @@ const Password = () => {
         </div>
         <div className='flex flex-col font-poppins'>
         <label htmlFor="confirm-password" className='label'>Confirm Password</label>
-            <input type="password" name="confirm-password" id="confirm-password" className='input-box focus:outline-none ' required onChange={onChangeConfirmPassword} onFocus={() => setConfirmPassword(true)}
+            <input type="password" name="confirmpassword" id="confirm-password" className='input-box focus:outline-none ' required onChange={onChangeConfirmPassword} onFocus={() => setConfirmPassword(true)}
         onBlur={() => setConfirmPassword(false)}/>
             {showHideConfirm()}
         </div>
